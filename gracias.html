@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>¡Gracias! - Clemente & Paola</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <link href="cypinv.css" rel="stylesheet" />
+    <script src="cypinv.js"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5e6d3 0%, #e8d5c4 100%);
+        }
+    </style>
+</head>
+
+<body class="font-display text-text-main min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-2xl w-full text-center">
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-2xl p-8 md:p-12">
+            <div class="mb-8">
+                <img src="multimedia/CE3sec.png" alt="Clemente & Paola" class="w-48 mx-auto mb-6" />
+            </div>
+
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-primary mb-4">
+                ¡Gracias por Confirmar!
+            </h1>
+
+            <p class="text-lg md:text-xl text-text-muted mb-8">
+                Tu confirmación ha sido recibida exitosamente.
+                <br class="hidden md:block" />
+                ¡Nos vemos el 20 de Diciembre a las 6:00 PM!
+            </p>
+
+            <div class="space-y-4 mb-8">
+                <div class="flex items-center justify-center gap-3 text-text-muted">
+                    <span class="text-2xl">📅</span>
+                    <span>20 de Diciembre, 2025 - 6:00 PM</span>
+                </div>
+                <div class="flex items-center justify-center gap-3 text-text-muted">
+                    <span class="text-2xl">📍</span>
+                    <span>Calle 63 #10-14, Barrio Asís</span>
+                </div>
+            </div>
+
+            <a href="cypinv.html"
+                class="inline-block bg-accent text-white font-bold text-base px-8 py-3 rounded-full hover:opacity-90 hover:scale-105 hover:shadow-lg active:scale-95 transition-all duration-200">
+                Volver a la Invitación
+            </a>
+        </div>
+
+        <p class="mt-6 text-sm text-text-muted">
+            Con amor, Clemente & Paola 💕
+        </p>
+    </div>
+
+    <script>
+        // Confetti automático al cargar la página
+        window.addEventListener('load', function () {
+            const colors = ['#763524', '#849B43', '#EAC5B0', '#F8E6A2'];
+
+            setTimeout(() => {
+                confetti({
+                    particleCount: 100,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0, y: 0.6 },
+                    colors: colors
+                });
+
+                confetti({
+                    particleCount: 100,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1, y: 0.6 },
+                    colors: colors
+                });
+            }, 300);
+        });
+    </script>
+</body>
+
+</html>
